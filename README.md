@@ -37,3 +37,32 @@ For a list of CVEs covered, see the following document:
 |       - Mitigation                 | List any patches, configuration changes, or mitigations for each vulnerability.                                     |
 | **Additional Tips**                |                                                                                                                      |
 | - Security Practice and Approach   | Follow safe security practices and take a controlled "hacker" approach to prevent risks.                            |
+
+
+
+## 📌 CVEs Included
+
+| CVE ID              | Description |
+|---------------------|------------|
+| **CVE-2020-7660**  | **`serialize-javascript` Remote Code Execution**: A vulnerability in `serialize-javascript` allows attackers to execute arbitrary code during the deserialization process. |
+| **CVE-2024-31982** | **XWiki Remote Code Execution (RCE)**: An RCE vulnerability in XWiki enables attackers to execute arbitrary code remotely, compromising the affected system. |
+| **CVE-2024-45519** | **Zimbra Remote Command Execution (RCE)**: A vulnerability in Zimbra allows remote attackers to execute arbitrary commands on the server, potentially leading to full system compromise. |
+| **CVE-2024-46538** | **pfSense Cross-Site Scripting (XSS)**: A cross-site scripting vulnerability in pfSense v2.5.2 allows attackers to inject arbitrary web scripts or HTML via a crafted payload, potentially leading to unauthorized access or data leakage. |
+| **CVE-2024-49113** | **Grafana Command Injection and Local File Inclusion**: An issue in Grafana's SQL Expressions feature allows attackers to execute arbitrary commands and include local files, potentially leading to remote code execution and unauthorized file access. |
+| **CVE-2024-9264**  | **Grafana Command Injection and Local File Inclusion**: Another critical vulnerability in Grafana's SQL Expressions feature enables command injection and local file inclusion, posing significant security risks. |
+| **CVE-2025-0411**  | **7-Zip Mark-of-the-Web Bypass**: A vulnerability in 7-Zip allows attackers to bypass the Mark-of-the-Web protection mechanism, potentially executing malicious code without user consent. |
+| **CVE-2025-26794** | **Exim Remote SQL Injection**: A vulnerability in Exim versions prior to 4.98.1 allows remote attackers to perform SQL injection attacks, potentially compromising the mail server. |
+
+## 🚀 How to Use
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/defhawk-specter/defhawk-cve.git
+    ```
+
+2. Navigate to the CVE folder of interest
+.
+3. Follow the instructions in the respective CVE directory.
+
+## Disclaimer
+
+This repository is strictly for educational and research purposes. Any misuse of this information is strictly prohibited. Use at your own risk!
