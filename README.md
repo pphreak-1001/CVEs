@@ -52,6 +52,8 @@ For a list of CVEs covered, see the following document:
 | **CVE-2024-9264**  | **Grafana Command Injection and Local File Inclusion**: Another critical vulnerability in Grafana's SQL Expressions feature enables command injection and local file inclusion, posing significant security risks. |
 | **CVE-2025-0411**  | **7-Zip Mark-of-the-Web Bypass**: A vulnerability in 7-Zip allows attackers to bypass the Mark-of-the-Web protection mechanism, potentially executing malicious code without user consent. |
 | **CVE-2025-26794** | **Exim Remote SQL Injection**: A vulnerability in Exim versions prior to 4.98.1 allows remote attackers to perform SQL injection attacks, potentially compromising the mail server. |
+| **CVE-2025-1094** | **Postgre SQL Injection**: Improper neutralization of quoting syntax in PostgreSQL libpq functions PQescapeLiteral(), PQescapeIdentifier(), PQescapeString(), and PQescapeStringConn() allows a database input provider to achieve SQL injection in certain usage patterns. |
+
 
 ## 🚀 How to Use
 1. Clone the repository:
