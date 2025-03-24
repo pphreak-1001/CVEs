@@ -54,6 +54,7 @@ For a list of CVEs covered, see the following document:
 | **CVE-2025-26794** | **Exim Remote SQL Injection**: A vulnerability in Exim versions prior to 4.98.1 allows remote attackers to perform SQL injection attacks, potentially compromising the mail server. |
 | **CVE-2025-1094** | **Postgre SQL Injection**: Improper neutralization of quoting syntax in PostgreSQL libpq functions PQescapeLiteral(), PQescapeIdentifier(), PQescapeString(), and PQescapeStringConn() allows a database input provider to achieve SQL injection in certain usage patterns. |
 | **CVE-2024-13918** | **Laravel Reflected XSS**: Improper handling of user-supplied input in Laravel's debug-mode error page allows an attacker to inject arbitrary HTML/JavaScript code into the response. When `APP_DEBUG=true`, an attacker can craft a URL with a malicious query string that triggers a 500 error and reflects the payload in the error page, leading to Reflected Cross-Site Scripting (XSS). |
+| **CVE-2024-25940** | **VisiCut XML Deserialization**: VisiCut 2.1 allows code execution via Insecure XML Deserialization in the loadPlfFile method of VisicutModel.java.|
 
 
 ## 🚀 How to Use
