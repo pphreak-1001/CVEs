@@ -29,3 +29,68 @@ Install dependencies
 ```
 composer install
 ```
+
+Create SQLite database
+
+```
+touch database/database.sqlite
+chmod -R 777 database database/database.sqlite
+```
+
+Configure environment Copy .env.example to .env and make sure these lines exist:
+
+```
+APP_DEBUG=true
+DB_CONNECTION=sqlite
+DB_DATABASE=/absolute/path/to/database/database.sqlite
+```
+
+Generate app key
+
+```
+php artisan key:generate
+```
+
+Run migrations
+
+```
+php artisan migrate --force
+```
+
+Serve the app
+```
+php artisan serve
+```
+
+Test the PoC
+
+Visit:
+
+```
+http://127.0.0.1:8000/xss-vuln?payload=<script>alert(1)</script>
+```
+
+---
+
+PoC Route
+The vulnerable route is defined in routes/web.php:
+```
+Route::get('/xss-vuln', function () {
+    return response(request('payload'));
+});
+```
+
+Mitigation
+
+Set APP_DEBUG=false in production environments.
+Always sanitize and escape user input.
+Update Laravel to the latest patched version.
+
+
+📝 License
+This project is licensed under the MIT License.
+
+```
+
+Let me know if you want it customized with your GitHub username, screenshot image, or additional links.
+```
